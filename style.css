@@ -20,14 +20,13 @@ section{
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 h2{
-    font-size: 2em;
+    font-size: 2.5em;
     color: rgba(238, 158, 10, 0.918);
     text-align: center;
 }
@@ -43,13 +42,14 @@ h2{
     left: 5px;
     transform: translateY(-50%);
     color: #fff;
-    font-size: 1em;
+    font-size: 1.2em;
     pointer-events: none;
     transition: .5s;
 }
 input:focus ~ label,
 input:valid ~ label{
 top: -5px;
+color: #e89b00;
 }
 .inputbox input{
     width: 100%;
@@ -61,11 +61,12 @@ top: -5px;
     padding: 0 35px 0 5px;
     color: #fff;
 }
-.inputbox ion-icon{
+.inputbox ion-icon {
     position: absolute;
-    right: 8px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 1.5em;
-    top: 20px;
     color: #fff;
 }
 .forget{
@@ -76,7 +77,9 @@ top: -5px;
     color: #fff;
 }
 .forget label input{
-    margin-right: 3px;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
     cursor: pointer;
 }
 .forget label a:hover{
@@ -95,16 +98,19 @@ top: -5px;
 .olvidar p a:hover{
     text-decoration: underline;
 }
-button{
+button {
     width: 100%;
     height: 40px;
     border-radius: 40px;
-    background-color: rgba(238, 158, 10, 0.918);
     border: none;
     outline: none;
     cursor: pointer;
     font-size: 1em;
     font-weight: 600;
+}
+button:hover {
+    background-color:#d48b00;
+    transition: background-color 0.3s ease;
 }
 .register {
     font-size: .9em;
@@ -119,4 +125,6 @@ button{
 }
 .register p a:hover{
     text-decoration: underline;
+    color: #e89b00;
+    transition: color 0.3s ease;
 }
